@@ -62,26 +62,79 @@
     deb http://mirror.poliwangi.ac.id/ubuntu/ disco-security multiverse
     ```
 
-- [x] **Update OS**
+    for exit & save use `CTRL + X` and than `CTRL + Y`
+
+- [x] **Update**
 	```bash
 	sudo apt update && sudo apt upgrade -y
+	sudo apt dist-upgrade
 	```
 
 - [x] **Check New Version**
 	```bash
-	apt autoremove -y
-	apt autoclean -y
-	```
-
-- [x] **Install git**
-	```bash
-	sudo apt install git
+	sudo do-release-upgrade
 	```
 
 - [x] **Clean Up OS**
 	```bash
-	apt autoremove -y
-	apt autoclean -y
+	sudo apt autoremove -y
+	sudo apt autoclean -y
+	```
+
+- [x] **Gnome Extention for Browser**
+	```bash
+	sudo apt install chrome-gnome-shell -y
+	```
+
+	**Gnome Extention to do install**
+	- [x] **User Themes** [easily install new shell themes downloaded from the web.](https://extensions.gnome.org/extension/19/user-themes/)
+	- [x] **Extention** [manage GNOME extension through a panel menu.](https://extensions.gnome.org/extension/1036/extensions/)
+	- [x] **OpenWeather** [get weather updates on your Desktop.](https://extensions.gnome.org/extension/750/openweather/)
+
+	**Download extention for Browsers**
+	- [x] **Chrome/chromium** [Integrasi Shell GNOME](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=id)
+	- [x] **Firefox** [Integrasi Shell GNOME](https://addons.mozilla.org/id/firefox/addon/gnome-shell-integration/)
+
+
+- [x] **Media Codecs**
+	```bash
+	sudo apt install ubuntu-restricted-extras -y
+	sudo apt install libavcodec-extra -y
+	sudo apt install libdvd-pkg -y
+	```
+
+- [x] **Synaptic**
+	```bash
+	sudo apt install synaptic -y
+	```
+
+- [x] **gtx Engine**
+	```bash
+	sudo apt-get install gtk2-engines-murrine gtk2-engines-pixbuf -y
+	```
+
+- [x] **Archive Applications**
+	```bash
+	sudo apt-get install unrar zip unzip p7zip-full p7zip-rar rar -y
+	```
+
+- [x] **Thimeshift Backup system**
+	```bash
+	sudo add-apt-repository -y ppa:teejee2008/ppa
+	sudo apt-get update -y
+	sudo apt-get install timeshift -y
+	```
+
+- [x] **Java**
+	```bash
+	sudo apt-get install openjdk-11-jdk -y
+	```
+
+- [x] **Add Pantheon File Manager for ubuntu**
+	```bash
+	sudo add-apt-repository ppa:elementary-os/daily
+	sudo apt update -y
+	sudo apt install pantheon-file -y
 	```
 
 ---
@@ -89,44 +142,20 @@
 <br />
 
 ## Tweaking the UI
-- [x] **Add minimize button**
+- [x] **Tweak**
 	```bash
-	sudo add-apt-repository ppa:philip.scott/elementary-tweaks
-	apt install elementary-tweaks
-	```
-	- then do `System Settings`>`Tweaks`>`Layout`>`Windows`
-
-- [x] **Bring back Tray icons**
-[![Screenshot](https://github.com/donadigo/wingpanel-indicator-namarupa/raw/master/data/shot.png)](https://github.com/donadigo/wingpanel-indicator-namarupa)
-	```bash
-	apt install gobject-introspection libglib2.0-dev libgranite-dev libindicator3-dev libwingpanel-2.0-dev valac
-	git clone https://github.com/donadigo/wingpanel-indicator-namarupa
-	cd wingpanel-indicator-namarupa
-	meson build --prefix=/usr && cd build
-	ninja
-	sudo ninja install
-	apt install -f
-	wget https://github.com/mdh34/elementary-indicators/releases/download/0.1/indicator-application-patched.deb
-	sudo dpkg -i indicator-application-patched.deb
-	sudo reboot
-	```
-- [x] **Remove Bluethooth indicator**
-	```bash
-	apt remove wingpanel-indicator-bluetooth
-	``
-
-- [x] **Icon Pack** [La Capitaine](https://krourke.org/projects/art/la-capitaine-icon-theme) *by [@keeferrourke](https://github.com/keeferrourke/la-capitaine-icon-theme)*
-	```bash
-	cd $HOME/.icons
-	git clone https://github.com/keeferrourke/la-capitaine-icon-theme.git
-	cd la-capitaine-icon-theme && ./configure
+	sudo apt install gnome-tweak-tool -y
 	```
 
-- [x] **Cursors** La Capitaine *by [@keeferrourke](https://github.com/keeferrourke/capitaine-cursors)*
-	```bash
-	sudo add-apt-repository ppa:dyatlov-igor/la-capitaine
-	apt install la-capitaine-cursor-theme
-	```
+- [x] **Make Ubuntu Like Mac Os Mojave/Cataline**
+	
+	**MAC THEME**
+	- [x] **Sheel Theme**
+			[McMojave](https://www.gnome-look.org/p/1275087/)
+			[McOS-Theme CTLina](https://www.gnome-look.org/p/1241688/)
+			
+	- [x] **Icon** [McMojave-cricle](https://www.gnome-look.org/s/Gnome/p/1305429)
+	- [x] **Icon** [McMojave-cricle](https://www.gnome-look.org/s/Gnome/p/1305429)
 ---
 ## Boosting up system
 
