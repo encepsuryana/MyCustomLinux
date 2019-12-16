@@ -1,16 +1,76 @@
-
-
 ## FIRST THING FIRST
+
+- [x] **Change the Repository**
+	```bash
+	sudo nano /etc/apt/sources.list
+	```
+
+	Repository Local Indonesia Ubuntu 19.04
+	**Server Kambing.ui.ac.id**
+	```bash
+    deb http://kambing.ui.ac.id/ubuntu/ disco main restricted
+    deb http://kambing.ui.ac.id/ubuntu/ disco-updates main restricted
+    deb http://kambing.ui.ac.id/ubuntu/ disco universe
+    deb http://kambing.ui.ac.id/ubuntu/ disco-updates universe
+    deb http://kambing.ui.ac.id/ubuntu/ disco multiverse
+    deb http://kambing.ui.ac.id/ubuntu/ disco-updates multiverse
+    deb http://kambing.ui.ac.id/ubuntu/ disco-backports main restricted universe multiverse
+    deb http://kambing.ui.ac.id/ubuntu/ disco-security main restricted
+    deb http://kambing.ui.ac.id/ubuntu/ disco-security universe
+    deb http://kambing.ui.ac.id/ubuntu/ disco-security multiverse
+    ```
+
+	**Server Kebo.pens.ac.id**
+	```bash
+    deb http://kebo.pens.ac.id/ubuntu/ disco main restricted
+    deb http://kebo.pens.ac.id/ubuntu/ disco-updates main restricted
+    deb http://kebo.pens.ac.id/ubuntu/ disco universe
+    deb http://kebo.pens.ac.id/ubuntu/ disco-updates universe
+    deb http://kebo.pens.ac.id/ubuntu/ disco multiverse
+    deb http://kebo.pens.ac.id/ubuntu/ disco-updates multiverse
+    deb http://kebo.pens.ac.id/ubuntu/ disco-backports main restricted universe multiverse
+    deb http://kebo.pens.ac.id/ubuntu/ disco-security main restricted
+    deb http://kebo.pens.ac.id/ubuntu/ disco-security universe
+    deb http://kebo.pens.ac.id/ubuntu/ disco-security multiverse
+    ```
+
+	**Server Mirror.unej.ac.id**
+	```bash
+    deb http://mirror.unej.ac.id/ubuntu/ disco main restricted
+    deb http://mirror.unej.ac.id/ubuntu/ disco-updates main restricted
+    deb http://mirror.unej.ac.id/ubuntu/ disco universe
+    deb http://mirror.unej.ac.id/ubuntu/ disco-updates universe
+    deb http://mirror.unej.ac.id/ubuntu/ disco multiverse
+    deb http://mirror.unej.ac.id/ubuntu/ disco-updates multiverse
+    deb http://mirror.unej.ac.id/ubuntu/ disco-backports main restricted universe multiverse
+    deb http://mirror.unej.ac.id/ubuntu/ disco-security main restricted
+    deb http://mirror.unej.ac.id/ubuntu/ disco-security universe
+    deb http://mirror.unej.ac.id/ubuntu/ disco-security multiverse
+    ```
+
+	**Server Mirror Poliwangi**
+	```bash
+    deb http://mirror.poliwangi.ac.id/ubuntu/ disco main restricted
+    deb http://mirror.poliwangi.ac.id/ubuntu/ disco-updates main restricted
+    deb http://mirror.poliwangi.ac.id/ubuntu/ disco universe
+    deb http://mirror.poliwangi.ac.id/ubuntu/ disco-updates universe
+    deb http://mirror.poliwangi.ac.id/ubuntu/ disco multiverse
+    deb http://mirror.poliwangi.ac.id/ubuntu/ disco-updates multiverse
+    deb http://mirror.poliwangi.ac.id/ubuntu/ disco-backports main restricted universe multiverse
+    deb http://mirror.poliwangi.ac.id/ubuntu/ disco-security main restricted
+    deb http://mirror.poliwangi.ac.id/ubuntu/ disco-security universe
+    deb http://mirror.poliwangi.ac.id/ubuntu/ disco-security multiverse
+    ```
 
 - [x] **Update OS**
 	```bash
-	sudo apt update && apt upgrade
+	sudo apt update && sudo apt upgrade -y
 	```
 
-- [x] **Enable PPA (Properties Commons)**
+- [x] **Check New Version**
 	```bash
-	sudo apt update
-	sudo apt install software-properties-common
+	apt autoremove -y
+	apt autoclean -y
 	```
 
 - [x] **Install git**
@@ -23,6 +83,7 @@
 	apt autoremove -y
 	apt autoclean -y
 	```
+
 ---
 
 <br />
